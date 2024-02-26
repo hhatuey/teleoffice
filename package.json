@@ -8,11 +8,16 @@
     "npm": ">= 10"
   },
   "packageManager": "yarn@4.1.0",
-  "workspaces":[
+  "workspaces": [
     "apps/*",
     "packages/*"
   ],
   "dependencies": {
+    "@xarc/app": "^11.0.0",
+    "@xarc/fastify-server": "^3.2.3",
+    "@xarc/react": "^1.0.0",
+    "@xarc/react-query": "^1.0.0",
+    "@xarc/react-redux": "^1.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tslib": "^2.3.0"
@@ -42,6 +47,8 @@
     "@types/react-dom": "18.2.14",
     "@typescript-eslint/eslint-plugin": "^6.13.2",
     "@typescript-eslint/parser": "^6.13.2",
+    "@xarc/opt-postcss": "^2.0.0",
+    "@xarc/opt-stylus": "^2.0.0",
     "babel-jest": "^29.4.1",
     "cypress": "13.6.4",
     "eslint": "~8.48.0",

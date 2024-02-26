@@ -1,21 +1,15 @@
 {
-  "name": "my-x-app",
-  "version": "0.0.1",
+  "name": "@teleoffice/core",
   "description": "Web application using Electrode X",
+  "version": "0.0.1",
+  "main": "lib/server/index.js",
   "homepage": "",
-  "scripts": {
-    "dev": "xrun -q electrode/dev",
-    "test": "xrun electrode/check",
-    "build": "xrun electrode/build",
-    "start": "node lib/server"
-  },
+  "license": "UNLICENSED",
   "author": {
     "name": "",
     "email": "",
     "url": ""
   },
-  "contributors": [],
-  "main": "lib/server/index.js",
   "keywords": [
     "electrode",
     "web"
@@ -24,29 +18,17 @@
     "type": "git",
     "url": ""
   },
-  "license": "UNLICENSED",
-  "engines": {
-    "node": ">= 12",
-    "npm": ">= 6"
-  },
-  "prettier": {
-    "printWidth": 100
+  "contributors": [],
+  "scripts": {
+    "dev": "xrun -q electrode/dev",
+    "test": "xrun electrode/check",
+    "build": "xrun electrode/build",
+    "start": "node lib/server"
   },
   "dependencies": {
-    "@babel/runtime": "^7.12.5",
-    "@xarc/app": "^11.0.0",
-    "@xarc/fastify-server": "^3.2.3",
-    "@xarc/react": "^1.0.0",
-    "@xarc/react-query": "^1.0.0",
-    "@xarc/react-redux": "^1.0.0"
+    "@babel/runtime": "^7.12.5"
   },
   "devDependencies": {
-    "@types/node": "^14.14.6",
-    "@xarc/app-dev": "^11.0.0",
-    "@xarc/opt-postcss": "^2.0.0",
-    "@xarc/opt-stylus": "^2.0.0",
-    "prettier": "^2.2.1",
-    "ts-node": "^9.1.1",
-    "typescript": "^4.1.3"
+    "@xarc/app-dev": "^11.0.0"
   }
 }
