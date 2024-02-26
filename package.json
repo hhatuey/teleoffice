@@ -2,8 +2,16 @@
   "name": "@teleoffice/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
   "private": true,
+  "engines": {
+    "node": ">= 20",
+    "npm": ">= 10"
+  },
+  "packageManager": "yarn@4.1.0",
+  "workspaces":[
+    "apps/*",
+    "packages/*"
+  ],
   "dependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0",
