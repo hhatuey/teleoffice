@@ -1,13 +1,13 @@
-import { React, ReactSubApp } from "@xarc/react";
-import { docsLink } from "../info";
+import { React, ReactSubApp, declareSubApp } from '@xarc/react';
+import { docsLink } from '../info';
 // CSS module support for .styl
-import styles from "../styles/demo1.mod.styl";
+import styles from '../styles/demo1.mod.styl';
 // CSS module support for .css
-import styles2 from "../styles/demo1.mod.css";
+import styles2 from '../styles/demo1.mod.css';
 
-const Demo1 = (props) => {
+const Demo1 = (props: any) => {
   return (
-    <div style={{ padding: "5px", border: "solid", marginLeft: "15%", marginRight: "15%" }}>
+    <div style={{ padding: '5px', border: 'solid', marginLeft: '15%', marginRight: '15%' }}>
       <p className={styles.demo1}>subapp demo1 (.styl css module blue color)</p>
       <p className={styles2.demo1}>.css module demo blue color</p>
       props: {JSON.stringify(props)}
@@ -21,3 +21,8 @@ const Demo1 = (props) => {
 export const subapp: ReactSubApp = {
   Component: Demo1,
 };
+
+export const subApp = declareSubApp({
+  name: 'demo1',
+  getModule: () => import('./'),
+});
