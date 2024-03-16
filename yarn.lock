@@ -2717,7 +2717,16 @@ __metadata:
   resolution: "@teleoffice/core@workspace:apps/core"
   dependencies:
     "@babel/runtime": "npm:^7.12.5"
+    "@teleoffice/ui": "npm:0.0.1"
     "@xarc/app-dev": "npm:^11.0.0"
+  languageName: unknown
+  linkType: soft
+
+"@teleoffice/home@workspace:packages/home":
+  version: 0.0.0-use.local
+  resolution: "@teleoffice/home@workspace:packages/home"
+  dependencies:
+    tslib: "npm:^2.3.0"
   languageName: unknown
   linkType: soft
 
@@ -2760,11 +2769,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@teleoffice/ui@workspace:packages/ui":
+"@teleoffice/ui@npm:0.0.1, @teleoffice/ui@workspace:packages/ui":
   version: 0.0.0-use.local
   resolution: "@teleoffice/ui@workspace:packages/ui"
-  dependencies:
-    tslib: "npm:^2.3.0"
   languageName: unknown
   linkType: soft
 

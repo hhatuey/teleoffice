@@ -29,7 +29,8 @@
     "start": "node lib/server"
   },
   "dependencies": {
-    "@babel/runtime": "^7.12.5"
+    "@babel/runtime": "^7.12.5",
+    "@teleoffice/ui": "0.0.1"
   },
   "devDependencies": {
     "@xarc/app-dev": "^11.0.0"
