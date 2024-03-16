@@ -2,9 +2,12 @@
   "name": "@teleoffice/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
   "private": true,
-  "dependencies": {},
+  "packageManager": "yarn@4.1.1",
+  "workspaces":[
+    "apps/*",
+    "packages/*"
+  ],
   "devDependencies": {
     "@nx/js": "18.1.1",
     "@nx/workspace": "18.1.1",
