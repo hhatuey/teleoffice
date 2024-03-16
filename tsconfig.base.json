@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@teleoffice/home": ["packages/home/src/index.ts"],
       "@teleoffice/ui": ["packages/ui/src/index.ts"]
     }
   },
