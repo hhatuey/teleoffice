@@ -1,8 +1,8 @@
 import { React, ReactSubApp, createDynamicComponent, staticPropsFeature } from "@xarc/react";
-import { Header } from "@teleoffice/ui";
+import { Header, Footer } from "@teleoffice/ui";
 import "bootstrap/dist/css/bootstrap.min.css";
 import electrodePng from "../../static/electrode.png";
-import { message } from "./message";
+import { copyRightMessage } from "../info";
 
 const Layout = (props) => {
   import("bootstrap/dist/js/bootstrap.bundle");
@@ -15,7 +15,7 @@ const Layout = (props) => {
         <aside>SideNav Component here</aside>
         <section>Container Component here</section>
       </main>
-      <footer>Footer Component here</footer>
+      <footer className="p-3"><Footer logoApp={electrodePng} legalMsg={copyRightMessage} /></footer>
     </>
   );
 };
