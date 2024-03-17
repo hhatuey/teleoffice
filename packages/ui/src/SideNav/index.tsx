@@ -1,4 +1,5 @@
 import { React } from '@xarc/react';
+import { Link } from '@xarc/react-router';
 
 const SvgIcons = () => {
   return (
@@ -53,30 +54,31 @@ export const SideNav = () => {
           data-bs-toggle="tooltip"
           data-bs-placement="right"
         >
-          <a
-            href="#"
-            className="nav-link active py-3 border-bottom rounded-0"
-            data-bs-toggle="pill"
-            aria-current="page"
-          >
-            <svg
-              className="bi pe-none"
-              width="24"
-              height="24"
-              role="img"
-              aria-label="Home"
+          <Link to="/">
+            <div
+              className="nav-link active py-3 border-bottom rounded-0"
+              data-bs-toggle="pill"
+              aria-current="page"
             >
-              <use xlinkHref="#home" />
-            </svg>
-          </a>
+              <svg
+                className="bi pe-none"
+                width="24"
+                height="24"
+                role="img"
+                aria-label="Home"
+              >
+                <use xlinkHref="#home" />
+              </svg>
+            </div>
+          </Link>
         </li>
         <li
           title="Dashboard"
           data-bs-toggle="tooltip"
           data-bs-placement="right"
         >
-          <a
-            href="#"
+        <Link to="/dashboard">
+          <div
             className="nav-link py-3 border-bottom rounded-0"
             data-bs-toggle="pill"
           >
@@ -89,11 +91,12 @@ export const SideNav = () => {
             >
               <use xlinkHref="#speedometer2" />
             </svg>
-          </a>
+          </div>
+          </Link>
         </li>
         <li title="Orders" data-bs-toggle="tooltip" data-bs-placement="right">
-          <a
-            href="#"
+          <Link to="/orders">
+          <div
             className="nav-link py-3 border-bottom rounded-0"
             data-bs-toggle="pill"
           >
@@ -106,11 +109,12 @@ export const SideNav = () => {
             >
               <use xlinkHref="#table" />
             </svg>
-          </a>
+          </div>
+          </Link>
         </li>
         <li title="Products" data-bs-toggle="tooltip" data-bs-placement="right">
-          <a
-            href="#"
+          <Link to="/products">
+          <div
             className="nav-link py-3 border-bottom rounded-0"
             data-bs-toggle="pill"
           >
@@ -123,15 +127,16 @@ export const SideNav = () => {
             >
               <use xlinkHref="#grid" />
             </svg>
-          </a>
+          </div>
+          </Link>
         </li>
         <li
           title="Customers"
           data-bs-toggle="tooltip"
           data-bs-placement="right"
         >
-          <a
-            href="#"
+        <Link to="/customers">
+          <div
             className="nav-link py-3 border-bottom rounded-0"
             data-bs-toggle="pill"
           >
@@ -144,7 +149,8 @@ export const SideNav = () => {
             >
               <use xlinkHref="#people-circle" />
             </svg>
-          </a>
+          </div>
+          </Link>
         </li>
       </ul>
     </div>
