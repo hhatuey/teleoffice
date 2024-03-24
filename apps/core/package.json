@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.12.5",
+    "@teleoffice/home": "^0.0.1",
     "@teleoffice/ui": "0.0.1"
   },
   "devDependencies": {

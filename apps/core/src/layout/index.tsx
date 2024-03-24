@@ -1,6 +1,7 @@
 import { React, ReactSubApp } from "@xarc/react";
 import { reactRouterFeature, Route, Routes } from "@xarc/react-router";
 import { Header, Footer, SideNav } from "@teleoffice/ui";
+import { Home } from "@teleoffice/home";
 import "bootstrap/dist/css/bootstrap.min.css";
 import electrodePng from "../../static/electrode.png";
 import { copyRightMessage } from "../info";
@@ -16,9 +17,9 @@ const Layout = (props) => {
         <aside className="col-auto">
           <SideNav />
         </aside>
-        <section className="col">
+        <section className="col mx-1">
           <Routes>
-            <Route path="/" element={<div>Home subapp</div>} />
+            <Route path="/" element={<div><Home /></div>} />
             <Route path="/dashboard" element={<div>Dashboard subapp</div>} />
             <Route path="/orders" element={<div>Orders subapp</div>} />
             <Route path="/products" element={<div>Products subapp</div>} />
