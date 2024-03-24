@@ -6,34 +6,34 @@
 // provides the redux top level store facility.
 //
 
-import { React, ReactSubApp } from "@xarc/react";
-import { reduxFeature, connect } from "@xarc/react-redux";
-export { reduxReducers } from "./reducers";
+import { React, ReactSubApp, declareSubApp } from '@xarc/react';
+import { reduxFeature, connect } from '@xarc/react-redux';
+export { reduxReducers } from './reducers';
 
 const incNumber = () => {
   return {
-    type: "INC_NUMBER",
+    type: 'INC_NUMBER',
   };
 };
 
 const decNumber = () => {
   return {
-    type: "DEC_NUMBER",
+    type: 'DEC_NUMBER',
   };
 };
 
-const Demo2 = (props) => {
+const Demo2 = (props: { value: any; dispatch: any; }) => {
   const { value, dispatch } = props;
 
   return (
     <div>
       <div
         style={{
-          padding: "5px",
-          marginTop: "15px",
-          border: "solid",
-          marginLeft: "15%",
-          marginRight: "15%",
+          padding: '5px',
+          marginTop: '15px',
+          border: 'solid',
+          marginLeft: '15%',
+          marginRight: '15%',
         }}
       >
         <h2>subapp demo2 with Redux</h2>
@@ -45,7 +45,7 @@ const Demo2 = (props) => {
   );
 };
 
-const mapStateToProps = (state) => {
+const mapStateToProps = (state: { number: { value: any; }; }) => {
   return { value: state.number.value };
 };
 
@@ -62,3 +62,8 @@ export const subapp: ReactSubApp = {
     }),
   ],
 };
+
+export const subApp = declareSubApp({
+  name: 'demo2',
+  getModule: () => import('./'),
+});
